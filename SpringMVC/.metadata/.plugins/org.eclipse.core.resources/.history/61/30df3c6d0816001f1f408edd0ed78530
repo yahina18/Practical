@@ -1,0 +1,15 @@
+package com.springmvc.config.service;
+
+import com.springmvc.config.dao.UserDao;
+import com.springmvc.config.model.User;
+
+public class UserService {
+	
+	private UserDao userDao;
+	public void addUser(User user)
+	{
+		this.userDao.insertUserData(user);
+		
+	}
+
+}

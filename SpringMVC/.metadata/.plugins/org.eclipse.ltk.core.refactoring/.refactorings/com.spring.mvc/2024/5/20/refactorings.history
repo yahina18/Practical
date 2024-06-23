@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.springmvc.project.com.spring.mvc&apos; to &apos;com.spring.mvc.dao&apos;&#x0D;&#x0A;- Original project: &apos;com.spring.mvc&apos;&#x0D;&#x0A;- Original element: &apos;com.spring.mvc/src/main/java/com.springmvc.project.com.spring.mvc&apos;&#x0D;&#x0A;- Renamed element: &apos;com.spring.mvc/src/main/java/com.spring.mvc.dao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.springmvc.project.com.spring.mvc&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springmvc.project.com.spring.mvc" name="com.spring.mvc.dao" qualified="false" references="true" stamp="1715620549164" textual="false" version="1.0"/>
+</session>

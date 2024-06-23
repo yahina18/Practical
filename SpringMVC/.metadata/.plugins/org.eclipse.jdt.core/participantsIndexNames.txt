@@ -1,0 +1,19 @@
+INDEX VERSION 1.134
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\346920998.index
+\user.registration.com\src\main\resources
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3270320121.index
+\com.practice\src\main\java
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\775371139.index
+\com.practice.springMO\src\main\resources
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1915100503.index
+\user.registration.com\src\main\java
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\851953321.index
+\com.springmvc.config\src\main\resources
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1883128866.index
+\com.user.registration.practice\src\main\resources
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1410182880.index
+\com.practice.springmvc\src\main\resources
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4175543423.index
+\com.springmvc.config\src\main\java
+D:\Spring-1\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4092942677.index
+\user.registration.com\src\main\java

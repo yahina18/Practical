@@ -1,0 +1,10 @@
+
+May 19, 2024 12:30:36.253 NEW SESSION
+May 19, 2024 12:30:36.253 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 19, 2024 12:31:45.711 [11364:20088:0519/123145.711:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+May 19, 2024 12:56:30.807 NEW SESSION
+May 19, 2024 12:56:30.807 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 19, 2024 14:11:25.478 [4140:452:0519/141125.478:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+May 19, 2024 14:11:25.640 [4140:452:0519/141125.640:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+May 19, 2024 14:16:02.885 [4140:11920:0519/141602.885:ERROR:device_event_log_impl.cc(195)] [14:16:02.885] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)

@@ -1,0 +1,22 @@
+package user.registration.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import user.registration.model.User;
+
+
+
+public class UserDao {
+
+	@Autowired
+	private HibernateTemplate hibernateTemplate;
+	
+	
+	public int insertUserData(User user)
+	{
+		int i =(Integer)hibernateTemplate.save(user);
+		return i;
+	}
+	
+}

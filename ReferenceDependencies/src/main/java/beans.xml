@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- <bean id = "student" class = "SpringCore.ReferenceDependencies.Student">
+<property name="mathCheat">
+<bean class = "SpringCore.ReferenceDependencies.MathCheat"/>
+</property>
+
+</bean>	   old way to configure objects  -->
+
+
+<bean id = "mathCheat" class = "SpringCore.ReferenceDependencies.MathCheat"></bean>
+<bean id = "scienceCheat" class = "SpringCore.ReferenceDependencies.ScienceCheat"></bean>
+
+
+<bean id = "student" class = "SpringCore.ReferenceDependencies.Student">
+<property name="cheat" ref = "scienceCheat"></property>
+</bean>
+
+
+<!-- Service Enable  -->
+
+<bean id = "Message" class = "com.Assignment.Question.MissedCallAlterService"></bean>
+<bean id = "HelloTune" class = "com.Assignment.Question.HelloTuneService"></bean>
+<bean id = "DataService" class = "com.Assignment.Question.DataService"></bean>
+
+<bean id = "airtel" class = "com.Assignment.Question.Airtel"> 
+<property name="service" ref = "HelloTune"></property>
+
+</bean>
+
+		
+		
+</beans>

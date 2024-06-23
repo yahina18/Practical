@@ -1,0 +1,22 @@
+package com.springmvc.config.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class RequestController {
+
+	@RequestMapping("/one")
+	public String onehandler()
+	{
+		System.out.println("Inside One Handler !! ");
+		return "redirect:/enjoy";
+		
+	}
+	
+	public void enjoy()
+	{
+		System.out.println("Inside Enjoy ::");
+	}
+	
+}

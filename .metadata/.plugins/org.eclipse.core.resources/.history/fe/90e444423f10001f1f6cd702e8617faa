@@ -1,0 +1,109 @@
+package DatabaseConnection.SpringORM;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import DatabaseConnection.SpringORM.dao.StudentDao;
+import DatabaseConnection.SpringORM.entities.Student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        StudentDao stuudentDao = context.getBean("StudentDao",StudentDao.class);
+		/*
+		 * Student student = new Student(1, "Hina", "hina@gmail.com");
+		 * 
+		 * stuudentDao.insert(student);
+		 */
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        boolean go = true;
+        while(go)
+        {
+        	System.out.println("Press 1 for add new Student");
+        	System.out.println("Press 2 for get Student Details");
+        	System.out.println("Press 3 for get all Student Details");
+        	System.out.println("Press 4 for Delete Student ");
+        	System.out.println("Press 5 for Update Student ");
+        	System.out.println("Press 6 for Exits ");
+        	
+        	try{
+        		
+        		int input = Integer.parseInt(br.readLine());
+        		
+        		switch (input){
+				case 1:
+					// add 
+					System.out.println("********************************");
+					System.out.println("Enter Student Details !!! ");
+					System.out.println("Enter Student ID : ");
+					int id = Integer.parseInt(br.readLine());
+					
+					System.out.println("Enter Student City: ");
+					String studentCity = (String)br.readLine();
+					
+					System.out.println("Enter Student Name : ");
+					String studentName = (String)br.readLine();
+					
+					Student student = new Student(id, studentCity, studentName);
+					stuudentDao.insert(student);
+	
+					break;
+				case 2:
+				    // get student details	
+		            
+					System.out.println("Get all Student Details : ");
+					List<Student> studentDetails = stuudentDao.getAllStudent();
+					
+					for(Student std : studentDetails)
+						System.out.println(std);
+					
+					
+					break;
+				case 3:
+					// get all student details
+					break;
+				case 4:
+					//Delete Student
+					break;
+			    
+				case 5:	
+					
+					break;
+					
+				case 6:
+					go = false;
+					break;
+				default:
+					break;
+				}
+        		
+        		
+        	}catch(Exception e)
+        	{
+        		System.out.println("Invalid Operation:"+e);
+        	}
+                   	
+        }
+        System.out.println("Thank you We Will meet soon...!!!!");
+        
+        
+        
+        
+        
+        
+        
+    }
+}
